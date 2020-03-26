@@ -34,13 +34,13 @@ var rebateTot20 = priceTot - rebate20;
 
 if (yourAge < 18) {
   console.log("Hai acquistato un biglietto con scontistica del 20% riservato agli under 18 al costo di € " + rebateTot20);
-  document.getElementById('acquista').innerHTML = 'Hai acquistato un biglietto con scontistica del 20% riservato a gli under 18 al costo di € ' + rebateTot20;
+  document.getElementById('acquista').innerHTML = 'Hai acquistato un biglietto con scontistica del 20% riservato a gli under 18 al costo di € ' + rebateTot20.toFixed(2);
 
 } else if (yourAge > 65) {
   console.log("Hai acquistato un biglietto con scontistica del 40% riservato agli over 65 al costo di € " + rebateTot40);
-  document.getElementById('acquista').innerHTML = 'Hai acquistato un biglietto con scontistica del 40% riservato a gli over 65 al costo di € ' + rebateTot40;
+  document.getElementById('acquista').innerHTML = 'Hai acquistato un biglietto con scontistica del 40% riservato a gli over 65 al costo di € ' + rebateTot40.toFixed(2);
 
 } else  {
   console.log("spiacente non hai diritto a nessuna scontistica " + priceTot);
-  document.getElementById('acquista').innerHTML = 'Hai acquistato un biglietto al costo di € ' + priceTot  + ' Spiacente, non è possibile applicare nessuna scontistica';
+  document.getElementById('acquista').innerHTML = 'Hai acquistato un biglietto al costo di € ' + priceTot.toFixed(2)  + ' Spiacente, non è possibile applicare nessuna scontistica';
 }
